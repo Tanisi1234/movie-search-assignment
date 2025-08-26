@@ -40,11 +40,7 @@ from movie_search import search_movies
 results = search_movies("spy thriller in Paris", top_n=3)
 print(results)
 ```
-## Setup
-1. Clone: ‘git clone https://github.com/your-username/movie-search-assignment.git‘
-2. Create virtual environment: ‘python -m venv venv‘ and activate it.
-3. Install dependencies: ‘pip install -r requirements.txt‘
-4. Run notebook: ‘jupyter notebook movie_search_solution.ipynb‘
+
 ## Testing
 ```
 Run: ‘python -m unittest tests/test_movie_search.py -v‘
