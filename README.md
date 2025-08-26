@@ -21,5 +21,25 @@ It allows users to search for movies by plot description and returns the most re
 Run the following command in your environment:
 ```bash
 pip install -r requirements.txt
+Run the notebook
+Open solution.ipynb in Jupyter and follow the instructions.
 
+Run tests
+Execute the tests to verify functionality:
 
+bash
+Copy
+Edit
+python -m unittest discover -s tests -p "test_*.py" -v
+Usage
+Use the search_movies(query, top_n) function in movie_search.py to find the top N movies most relevant to your query.
+The function returns a pandas DataFrame with the movie title, plot, and similarity score.
+
+Example
+python
+Copy
+Edit
+from movie_search import search_movies
+
+results = search_movies("spy thriller in Paris", top_n=3)
+print(results)
